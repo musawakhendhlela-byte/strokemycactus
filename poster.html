@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSTER: Rage Confirmed</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font --><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Re-using the same styles for 100% consistency */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFFFFF;
+            color: #4A2E0F;
+        }
+        .dark-brown-text { color: #4A2E0F; }
+        .lime-accent { color: #8BC34A; }
+        .lime-border { border-color: #8BC34A; }
+        .lime-bg { background-color: #8BC34A; }
+        .textured-container {
+            /* Minimal texture for a raw look */
+            background-image: url('data:image/svg+xml;utf8,<svg width="10" height="10" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg"><g fill="%23000000" fill-opacity="0.03"><path d="M0 0h1v1H0zm2 0h1v1H2zm4 0h1v1H4zm6 0h1v1H6zm-2 2h1v1H4zm-2 2h1v1H2zm4 2h1v1H4zm6 2h1v1H6zM0 4h1v1H0zm2 4h1v1H2zm4 4h1v1H4zm6 4h1v1H6zM0 8h1v1H0zm2 8h1v1H2zm4 8h1v1H4zm6 8h1v1H6z"/></g></svg>');
+            background-size: 10px 10px;
+        }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #FFFFFF; }
+        ::-webkit-scrollbar-thumb { background: #8BC34A; border-radius: 4px; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4 overflow-x-hidden">
+
+    <!-- Poster Display Card --><div class="relative max-w-4xl w-full mx-auto p-6 md:p-12 border-4 border-dark-brown-text bg-white shadow-xl rounded-lg textured-container text-center">
+
+        <header class="mb-8">
+            <h1 class="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-none dark-brown-text">
+                <span class="lime-accent">RAGE</span> CONFIRMED.
+            </h1>
+            <p class="text-xl md:text-2xl mt-2 font-semibold dark-brown-text">
+                Your spot is secured once payment is received.
+            </p>
+        </header>
+
+        <!-- Poster Image Container -->
+        <div class="max-w-xl mx-auto border-4 border-dark-brown-text rounded-lg overflow-hidden shadow-2xl">
+            <!-- Using the newly provided 'poster.jpg' file -->
+            <img src="poster.png" 
+                 alt="Official Party with Trav Cactus Family Affair Poster" 
+                 class="w-full h-auto block"
+            >
+        </div>
+        
+        <!-- Back to Home CTA -->
+        <footer class="mt-8">
+             <a href="index.html" class="inline-block px-8 py-3 text-lg font-black uppercase tracking-widest rounded-lg transition duration-300 ease-in-out
+                       lime-bg dark-brown-text border-4 border-lime-accent
+                       hover:bg-dark-brown-text hover:text-lime-accent focus:outline-none shadow-lg shadow-lime-500/30">
+                Back to Announcement
+            </a>
+        </footer>
+        
+    </div>
+</body>
+</html>
